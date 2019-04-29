@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+		<link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+		<title>Eat Da Burger!</title>
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="/assets/js/cats.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<center><img src="../../public/assets/img/burger2.png" alt="Burger Img">
+				<div class="jumbotron">
+					<h1>Eat Da Burger!</h1>
+					<p>Choose a Burger from the list. Then devour it <br>
+					Dont see a burger you like? Enter a Burger of your choice to the list using the submit form below. The list on the left keeps track of what you devoured</p>
+				</div></center>
+			</div>
+		</div><br>
+
+		{{{ body }}}
+
+		<br><br>
+
+	<form action="burger/create" method="POST">
+	
+		<div class="row">
+
+			<div class="col-md-3"></div>
+
+			<div class="form-group col-md-6">
+				<center><label for="new_burger">Request a new Burger!</label>
+				<textarea class="form-control" type="text" id="new_burger"></textarea></center>
+			</div>
+
+			<div class="col-md-3"></div>
+		</div>
+
+		<button id="submit-button" type="submit" class="btn btn-danger">Make my Burger!</button>
+	</form>
+
+	</body>
+</html>
